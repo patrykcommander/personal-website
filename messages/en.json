@@ -1,0 +1,14 @@
+{
+  "navigation": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education"
+  },
+  "about": {
+    "hi": "Hi!",
+    "myNameIs": "My name is",
+    "shortDescription": "I am an aspiring Software Developer and System Administrator",
+    "overview": "Here, You will find a comprehensive overview of my academic achievements and professional experience, offering deeper insight into my background."
+  }
+}

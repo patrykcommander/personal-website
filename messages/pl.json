@@ -1,0 +1,14 @@
+{
+  "navigation": {
+    "about": "O mnie",
+    "projects": "Projekty",
+    "experience": "Doświadczenie",
+    "education": "Edukacja"
+  },
+  "about": {
+    "hi": "Cześć!",
+    "myNameIs": "Nazywam się",
+    "shortDescription": "Jestem aspirującym Software Developer'em i Administratorem Systemów IT",
+    "overview": "Znajdziesz tutaj streszczony opis moich najważniejszych osiągnięć akademickich oraz dotychczas zdobytego doświadcznia zawodowego, co pozwoli Tobie bliżej zapoznać się z moją osobą."
+  }
+}
