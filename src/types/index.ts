@@ -13,7 +13,3 @@ export type Education = {
   endYear: number;
   mark: number;
 };
-
-export type LocaleDict = {
-  [key: string]: string;
-};

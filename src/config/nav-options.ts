@@ -2,7 +2,7 @@ import { NavlinkOption } from "@/types";
 
 export const NAV_OPTIONS: NavlinkOption[] = [
   {
-    label: "about",
+    label: "home",
     href: "/",
   },
   {
@@ -16,5 +16,9 @@ export const NAV_OPTIONS: NavlinkOption[] = [
   {
     label: "projects",
     href: "/projects",
+  },
+  {
+    label: "contact",
+    href: "/contact",
   },
 ];

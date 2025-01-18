@@ -13,7 +13,7 @@ export default async function page() {
   const t = await getTranslations("about");
 
   return (
-    <div className="flex items-center justify-center h-full gap-12 w-10/12 lg:w-8/12 p-4 text-light-foreground dark:text-dark-foreground lg:h-screen">
+    <div className="flex items-center justify-center h-full gap-12 w-full lg:w-8/12 py-4 px-8 text-light-foreground dark:text-dark-foreground">
       <div className="flex flex-col lg:flex-row justify-center lg:gap-12 gap-4 max-w-[1400px]">
         <div className="flex flex-col text-2xl font-semibold gap-8 w-full lg:w-1/2 order-2 lg:order-none">
           <div className="flex flex-row flex-wrap gap-2">
@@ -29,7 +29,7 @@ export default async function page() {
           <div className="flex flex-col gap-2">
             <i>{t("shortDescription")}</i>
           </div>
-          <div className="text-base dark:text-dark-accent text-justify">
+          <div className="text-base dark:text-dark-white text-justify">
             <p>{t("overview")}</p>
           </div>
         </div>

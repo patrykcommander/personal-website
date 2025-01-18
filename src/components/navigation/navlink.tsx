@@ -9,9 +9,15 @@ interface NavlinkProps {
   children: React.ReactNode;
   locale: string;
   href: string;
+  customClass?: string;
 }
 
-export default function Navlink({ children, locale, href }: NavlinkProps) {
+export default function Navlink({
+  children,
+  locale,
+  href,
+  customClass,
+}: NavlinkProps) {
   const pathname = usePathname();
 
   let isActive = false;
@@ -25,17 +31,17 @@ export default function Navlink({ children, locale, href }: NavlinkProps) {
     isActive = false;
   }
 
+  const classString = clsx(
+    "font-semibold py-1 w-full",
+    isActive
+      ? "border-b-2 dark:border-dark-secondary dark:text-dark-secondary border-black text-black"
+      : "border-b-0 text-white",
+    customClass
+  );
+
   return (
     <div>
-      <Link
-        className={clsx(
-          "font-semibold py-1 w-full",
-          isActive
-            ? "border-b-2 dark:border-dark-secondary dark:text-dark-secondary border-light-foreground text-light-foreground"
-            : "border-b-0 text-dark-foreground"
-        )}
-        href={`/${locale}/${href}`}
-      >
+      <Link className={classString} href={`/${locale}/${href}`}>
         {children}
       </Link>
     </div>
