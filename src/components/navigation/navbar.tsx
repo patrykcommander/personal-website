@@ -5,8 +5,8 @@ import Navlink from "@/components/navigation/navlink";
 import ThemeSwitcher from "@/components/theme-switcher";
 import LocaleSwitcher from "@/components/locale-switcher";
 import MobileNav from "./mobile-nav";
-import { NAV_OPTIONS } from "@/config/nav-options";
 import Switches from "./switches";
+import { NAV_OPTIONS } from "@/config/nav-options";
 
 const quantico = Quantico({ weight: "700", subsets: ["latin"] });
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import { Quantico } from "next/font/google";
-import SocialLink from "../ui/social-link";
+import SocialLink from "@/components/ui/social-link";
 import FooterNav from "./footer-nav";
 
 const quantico = Quantico({ weight: "700", subsets: ["latin"] });
