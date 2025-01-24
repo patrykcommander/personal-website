@@ -6,9 +6,9 @@
   },
   "navigation": {
     "home": "Home",
+    "about": "About",
     "projects": "Projects",
-    "experience": "Experience",
-    "education": "Education",
+    "experience": "Experience and Education",
     "contact": "Contact"
   },
   "footer": {

@@ -6,8 +6,8 @@ export const NAV_OPTIONS: NavlinkOption[] = [
     href: "/",
   },
   {
-    label: "education",
-    href: "/education",
+    label: "about",
+    href: "/about",
   },
   {
     label: "experience",

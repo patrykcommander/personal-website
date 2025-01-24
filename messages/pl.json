@@ -6,9 +6,9 @@
   },
   "navigation": {
     "home": "Strona główna",
+    "about": "O mnie",
     "projects": "Projekty",
-    "experience": "Doświadczenie",
-    "education": "Edukacja",
+    "experience": "Doświadczenie i Edukacja",
     "contact": "Kontakt"
   },
   "footer": {
