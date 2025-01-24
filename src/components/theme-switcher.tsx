@@ -13,15 +13,15 @@ export default function ThemeSwitcher() {
   return (
     <div
       className={clsx(
-        "relative flex items-center gap-8 px-4 py-2 border-2 w-[120px]",
-        resolvedTheme === "light" ? "border-light-foreground" : "border-white"
+        "relative flex items-center gap-8 px-4 py-2 border-2 w-[120px] bg-light-background dark:bg-dark-background",
+        resolvedTheme === "light" ? "border-black" : "border-white"
       )}
       style={{
         borderRadius: "24px",
       }}
     >
       <div
-        className={`absolute top-0 left-0 w-1/2 h-full bg-light-secondary transition-transform duration-300 border-2 border-light-primary dark:border-dark-background ${
+        className={`absolute top-0 left-0 w-1/2 h-full bg-dark-secondary border-2 border-background transition-transform duration-300 dark:bg-dark-secondary dark:border-dark-background ${
           resolvedTheme === "dark" ? "translate-x-full" : "translate-x-0"
         }`}
         style={{

@@ -2,12 +2,12 @@ import { NavlinkOption } from "@/types";
 
 export const NAV_OPTIONS: NavlinkOption[] = [
   {
-    label: "about",
+    label: "home",
     href: "/",
   },
   {
-    label: "education",
-    href: "/education",
+    label: "about",
+    href: "/about",
   },
   {
     label: "experience",
@@ -16,5 +16,9 @@ export const NAV_OPTIONS: NavlinkOption[] = [
   {
     label: "projects",
     href: "/projects",
+  },
+  {
+    label: "contact",
+    href: "/contact",
   },
 ];

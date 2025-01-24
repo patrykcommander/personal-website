@@ -1,14 +1,23 @@
 {
+  "settings": "Ustawienia",
+  "localeSwitcher": {
+    "pl": "Polski",
+    "en": "Angielski"
+  },
   "navigation": {
+    "home": "Strona główna",
     "about": "O mnie",
     "projects": "Projekty",
-    "experience": "Doświadczenie",
-    "education": "Edukacja"
+    "experience": "Doświadczenie i Edukacja",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "reachOut": "Łap mnie na"
   },
   "about": {
     "hi": "Cześć!",
     "myNameIs": "Nazywam się",
     "shortDescription": "Jestem aspirującym Software Developer'em i Administratorem Systemów IT",
-    "overview": "Znajdziesz tutaj streszczony opis moich najważniejszych osiągnięć akademickich oraz dotychczas zdobytego doświadcznia zawodowego, co pozwoli Tobie bliżej zapoznać się z moją osobą."
+    "overview": "Znajdziesz tutaj streszczony opis moich najważniejszych osiągnięć akademickich oraz dotychczas zdobytego doświadcznia zawodowego, co pozwoli Tobie bliżej zapoznać się z moją osobą. W wolnym czasie poszerzam swoją wiedzę z działki IT oraz dbam o kondycję fizyczną, o czym również możesz przeczytać na mojej stronie."
   }
 }

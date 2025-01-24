@@ -1,45 +1,60 @@
 import React from "react";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { Quantico } from "next/font/google";
 import Navlink from "@/components/navigation/navlink";
 import ThemeSwitcher from "@/components/theme-switcher";
 import LocaleSwitcher from "@/components/locale-switcher";
-import { Quantico } from "next/font/google";
+import MobileNav from "./mobile-nav";
+import Switches from "./switches";
 import { NAV_OPTIONS } from "@/config/nav-options";
-import { LOCALE_TO_LANGUAGE, LOCALES } from "@/config/locales";
 
 const quantico = Quantico({ weight: "700", subsets: ["latin"] });
 
-interface NavbarProps {
-  locale: string;
-}
-
-export default async function Navbar({ locale }: NavbarProps) {
-  const t = await getTranslations("navigation");
+const Navbar = ({ locale }: { locale: string }) => {
+  const t = useTranslations("navigation");
 
   return (
-    <div className="flex justify-center w-full bg-light-primary dark:bg-dark-background dark:border-b-2 px-4">
-      <div className="flex items-center justify-around py-4 text-lg w-full max-w-[1920px]">
+    <div className="flex justify-center w-full bg-light-primary dark:bg-dark-background border-b-2 border-black dark:border-white p-4">
+      <MobileNav>
+        <div className="flex flex-row justify-around w-full">
+          <div className="flex flex-col gap-2">
+            {NAV_OPTIONS.map((option, index) => (
+              <Navlink
+                key={index}
+                href={option.href}
+                locale={locale}
+                customClass="text-lg uppercase text"
+              >
+                {t(option.label)}
+              </Navlink>
+            ))}
+          </div>
+          <div className="flex flex-col justify-around items-end h-auto">
+            <ThemeSwitcher />
+            <LocaleSwitcher locale={locale} />
+          </div>
+        </div>
+      </MobileNav>
+      <div className="items-center justify-around text-lg w-full max-w-[1920px] hidden lg:flex px-8">
         <div className={quantico.className}>
           <p className="uppercase text-2xl">
             <i>Orkisz</i>
           </p>
         </div>
-        <div className="flex flex-row justify-evenly w-[480px]">
+        <div className="flex flex-row justify-evenly w-[640px]">
           {NAV_OPTIONS.map((option, index) => (
             <Navlink key={index} locale={locale} href={option.href}>
               {t(`${option.label}`)}
             </Navlink>
           ))}
         </div>
-        <div className="flex flex-row gap-4 items-center justify-center">
+        <Switches>
           <ThemeSwitcher />
-          <LocaleSwitcher
-            locales={LOCALES}
-            currentLocale={locale}
-            localeDict={LOCALE_TO_LANGUAGE}
-          />
-        </div>
+          <LocaleSwitcher locale={locale} />
+        </Switches>
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;

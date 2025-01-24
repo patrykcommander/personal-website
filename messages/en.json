@@ -1,14 +1,23 @@
 {
+  "settings": "Settings",
+  "localeSwitcher": {
+    "pl": "Polish",
+    "en": "English"
+  },
   "navigation": {
+    "home": "Home",
     "about": "About",
     "projects": "Projects",
-    "experience": "Experience",
-    "education": "Education"
+    "experience": "Experience and Education",
+    "contact": "Contact"
+  },
+  "footer": {
+    "reachOut": "Let's connect @"
   },
   "about": {
     "hi": "Hi!",
     "myNameIs": "My name is",
     "shortDescription": "I am an aspiring Software Developer and System Administrator",
-    "overview": "Here, You will find a comprehensive overview of my academic achievements and professional experience, offering deeper insight into my background."
+    "overview": "Here, You will find a comprehensive overview of my academic achievements and professional experience, offering deeper insight into my background. In my leisure time, I am thrilled to expand my knowledge in the IT field and maintain my physical fitness, both of which you can read more on this personal website."
   }
 }
